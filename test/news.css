@@ -75,6 +75,10 @@ body {
     width: 150px;
 }
 
+/* .right div:nth-of-type(2) li:hover{
+    background-color: #207bbb;
+} */
+
 .right div:nth-of-type(1) {
     font-size: 13px;
     line-height: 20px;
@@ -127,12 +131,17 @@ body {
     color:white;
 }
 
+
 .a3 {
     display: block;
     border: 1px solid #ccc;
     /* text-decoration: none; */
     padding: 2px 4px;
     color: black;
+}
+
+.right div:nth-of-type(3) li:nth-of-type(1) a{
+    border: 0;
 }
 
 .right div:nth-of-type(3) {

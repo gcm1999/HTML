@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  vertical-align: top;
+}
+body {
+  font-size: 14px;
+  font-family: "微软雅黑";
+}
+.fixed{
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: blue;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    box-shadow: 0 5px 5px #666;
+    position: fixed;
+    right: 50px;
+    bottom: 300px;
+}

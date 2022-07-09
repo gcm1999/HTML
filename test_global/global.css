@@ -17,16 +17,136 @@ body {
   font-size: 14px;
   font-family: "微软雅黑";
 }
-.fixed{
-    width: 150px;
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-    color: blue;
-    border-radius: 15px;
+.fixed span {
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: blue;
+  padding-left: 10px;
+  background: url(../img/bianji.png) no-repeat left;
+  background-size: 20px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  box-shadow: 0 5px 5px #666;
+
+  /* 相对浏览器定位 */
+  position: fixed;
+
+  /* 相对浏览器右边50px */
+  right: 50px;
+  /* 相对浏览器底部80px */
+  bottom: 80px;
+}
+.main{
+    width: 600px;
+    height: 400px;
+    margin: 50px auto;
     border: 1px solid #ccc;
-    box-shadow: 0 5px 5px #666;
-    position: fixed;
-    right: 50px;
-    bottom: 300px;
+    position: relative;
+}
+.main .relative{
+    width: 300px;
+    height: 50px;
+    background-color: orangered;
+
+    /* 相对默认位置上移50px */
+    position: relative;
+    top: -50px;
+}
+.main .relative ul{
+    background-color: #090723;
+    position: absolute;
+    width: 80px;
+    transition:all 2s;
+    /* 距离父级元素顶部50px */
+    top:50px;
+    color: #FFF;
+    display: none;
+}
+.main .relative:hover ul{
+    width: 200px;
+    display: inline-block;
+}
+.test{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.main .yuan{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    border-radius: 50%;
+    top: -10px;
+    right: -10px;
+}
+.main::after{
+    content: "2";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    color: white;
+    background-color: red;
+    border-radius: 50%;
+    bottom: -10px;
+    right: -10px;
+}
+.aqi{
+    /* width: 800px; */
+    margin:100px auto;
+    background-color: black;
+}
+.aqi li{
+    width: 260px;
+    position: relative;
+    color: white;
+    display: inline-block;
+    margin: 15px;
+}
+.aqi ul li::after{
+    content: "独播";
+    background-color: green;
+    position: absolute;
+    color: white;
+    right:0;
+    top:5px
+}
+.aqi ul li:nth-of-type(1)::before{
+    content: "24集全";
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    right:5px;
+    bottom: 70px;
+}
+.aqi ul li:nth-of-type(2)::before{
+    content: "30集全";
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    right:5px;
+    bottom: 70px;
+}
+.aqi ul li:nth-of-type(3)::before{
+    content: "38集全";
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    right:5px;
+    bottom: 70px;
+}
+.aqi li span:nth-of-type(2){
+    color: #ccc;
+    font-size: 12px;
+}
+.aqi img{
+    width:260px;
+    transition:.6s;
+}
+.aqi img:hover{
+    width: 270px;
 }

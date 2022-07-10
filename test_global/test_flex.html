@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display: flex;
+        }
+        .main ul:nth-of-type(1){
+            list-style: none;
+            border: 1px solid black;
+            margin: 10px;
+            padding: 0;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            flex-direction:row-reverse;
+            flex-wrap:wrap;
+        }
+        .main ul:nth-of-type(2){
+            list-style: none;
+            border: 1px solid black;
+            margin: 10px;
+            width: 550px;
+            padding: 0;
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap:wrap;
+
+            /* align-items: ; */
+
+            /* 对齐方式 */
+            justify-content: space-between;
+        }
+        .main ul li{
+            width: 10px;
+            height: 10px;
+            background-color: red;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+
+    </div>
+</body>
+</html>

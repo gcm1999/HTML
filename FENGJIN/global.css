@@ -1,0 +1,245 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  vertical-align: top;
+}
+body {
+  font-size: 14px;
+  font-family: "微软雅黑";
+}
+
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+
+.top {
+  height: 106px;
+  background: url(./imgs/头_02.jpg);
+  max-width: 1920px;
+}
+.top > div {
+  width: 1200px;
+  margin: 0 auto;
+}
+.top .logo {
+  padding: 10px;
+}
+.top .fr ul {
+  display: flex;
+  /* flex-direction: row-reverse; */
+}
+.top .nav > ul > li {
+  /* float: left; */
+  position: relative;
+}
+.top .nav > ul > li > a {
+  display: block;
+  width: 98px;
+  height: 106px;
+  line-height: 106px;
+  text-align: center;
+  color: black;
+}
+.top .nav > ul > li > span {
+  display: block;
+  width: 1px;
+  height: 14px;
+  background-color: #ccc;
+  margin: 46px 0;
+}
+.top .nav > ul > li > a:hover {
+  background-color: rgba(6, 107, 179);
+  color: white;
+}
+.top .nav > ul > li > ul{
+    background-color: rgba(4,84,143);
+    color: white;
+    text-align: center;
+    display: none;
+    position: fixed;
+    width: 98px;
+    z-index: 2;
+}
+.top .nav > ul > li > ul a{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    color: white;
+}
+.top .nav > ul > li:hover > ul{
+    display: block;
+}
+.top .nav > ul > li > ul a:hover{
+    background-color: rgba(56,137,193);
+}
+.top .nav > ul >li >ul li{
+    height: 30px;
+}
+
+
+
+
+
+/* *:所有html标签 */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-size: 14px;
+    font-family: '微软雅黑';
+    line-height: 50px;
+}
+
+.main {
+    width: 820px;
+    margin: 15px auto;
+}
+
+.left {
+    width: 150px;
+    float: left;
+}
+
+.right {
+    width: 650px;
+    float: right;
+}
+
+.left div:nth-child(1) {
+    background-color: #207bbb;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    padding: 15px;
+}
+
+.left div:nth-child(2) ul:nth-child(1) {
+    /* list-style: none; */
+    /* margin: 0;
+    padding: 0; */
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 8px 0 8px;
+}
+
+/* 鼠标放在li元素上时背景颜色变化 */
+.left li:hover{
+    background-color: #207bbb;
+    /* cursor: pointer; */
+}
+
+/* 鼠标放在li元素上时a标签的文字颜色变化 */
+.left li:hover a{
+    color: white;
+    /* cursor: pointer; */
+}
+
+.l1>li {
+    border-bottom: 1px solid #ccc;
+
+}
+
+.a1 {
+    /* text-decoration: none; */
+    color: black;
+    width: 150px;
+}
+
+/* .right div:nth-of-type(2) li:hover{
+    background-color: #207bbb;
+} */
+
+.right div:nth-of-type(1) {
+    font-size: 13px;
+    line-height: 20px;
+    background: url(../img/bg4.png) no-repeat left 1px;
+    background-size: 13px;
+    padding-left: 15px;
+    border-bottom: solid 1px;
+}
+
+.right div:nth-of-type(1) a:nth-of-type(1) {
+    float: right;
+    /* text-decoration: none; */
+}
+
+.right div:nth-of-type(2) ul:nth-of-type(1) {
+    /* list-style: none; */
+    line-height: 30px;
+    padding: 0;
+
+}
+
+.right div:nth-of-type(2) ul:nth-of-type(1)>li {
+    border-bottom: 1px #ccc dashed;
+}
+
+.a2 {
+    /* text-decoration: none; */
+    color: black;
+}
+
+.sp2 {
+    float: right;
+}
+
+.right div:nth-of-type(3) ul:nth-child(1) {
+    /* list-style: none; */
+    text-align: center;
+    line-height: 15px;
+}
+
+.l2 {
+    display: inline-block;
+}
+
+.l2:hover{
+    background-color: #207bbb;
+}
+
+.l2:hover a{
+    color:white;
+}
+
+
+.a3 {
+    display: block;
+    border: 1px solid #ccc;
+    /* text-decoration: none; */
+    padding: 2px 4px;
+    color: black;
+}
+
+.right div:nth-of-type(3) li:nth-of-type(1) a{
+    border: 0;
+}
+
+.right div:nth-of-type(3) {
+    margin-top: 30px;
+}

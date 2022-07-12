@@ -175,7 +175,7 @@ body {
 .right div:nth-of-type(1) {
     font-size: 13px;
     line-height: 20px;
-    background: url(../img/bg4.png) no-repeat left 1px;
+    background: url(./imgs/bg4.png) no-repeat left 1px;
     background-size: 13px;
     padding-left: 15px;
     border-bottom: solid 1px;
@@ -248,11 +248,12 @@ body {
 
 .bottom{
   max-width: 1920px;
+  margin:0 auto;
 }
-.main ::after{
+/* .main ::after{
   content: "";
   clear: both;
-}
+} */
 .bottom div:nth-of-type(1){
 background-color: #207bbb;
 }

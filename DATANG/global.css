@@ -22,6 +22,7 @@ body {
 
 .top {
   max-width: 1920px;
+  margin: 0 auto;
   display: flex;
   /* position: relative; */
 }
@@ -39,6 +40,7 @@ body {
 
 .nav {
   max-width: 1920px;
+  margin: 0 auto;
   background-color: rgba(13, 111, 184);
   height: 48px;
 }
@@ -55,47 +57,48 @@ body {
   color: white;
   width: 155px;
 }
-.nav > div > ul > li > a:hover{
-  background-color: rgba(235,169,28);
+.nav > div > ul > li > a:hover {
+  background-color: rgba(235, 169, 28);
   border-radius: 10px 10px 0 0;
 }
-.nav > div ul li{
+.nav > div ul li {
   position: relative;
 }
-.nav > div ul li div{
+.nav > div ul li div {
   position: absolute;
-  background-color: rgba(235,169,28);
+  background-color: rgba(235, 169, 28);
   width: 155px;
   border-radius: 0 0 10px 10px;
   display: none;
 }
-.nav > div ul li div ul{
+.nav > div ul li div ul {
   flex-direction: column;
 }
-.nav > div > ul > li:hover div{
+.nav > div > ul > li:hover div {
   display: block;
 }
-.nav > div > ul > li > div > ul >li >a:hover{
+.nav > div > ul > li > div > ul > li > a:hover {
   background-color: rgb(13, 111, 184);
 }
 
-.datang_banner{
+.datang_banner {
   height: 420px;
-  background: url(./img/datang.jpg) left no-repeat;
+  background: url(./img/datang.jpg) center no-repeat;
 }
 
-.main div:nth-of-type(4){
+.main .middle {
   width: 1200px;
   margin: auto;
   height: 586px;
 }
-.main .main_left{
+.main .main_left {
   width: 310px;
 }
-.main .main_left ul{
-  width: 252px;text-align: center;
+.main .main_left ul {
+  width: 252px;
+  text-align: center;
 }
-.main .main_left ul li:nth-of-type(1) a{
+.main .main_left ul li:nth-of-type(1) a {
   display: block;
   height: 139px;
   line-height: 138px;
@@ -103,26 +106,106 @@ body {
   color: white;
   background-color: rgb(13, 111, 184);
 }
-.main .main_left ul li a{
+.main .main_left ul li {
+  position: relative;
+}
+.main .main_left ul li img {
+  width: 36px;
+  position: absolute;
+  z-index: 1;
+  top: 16px;
+  right: 36px;
+  display: none;
+}
+.main .main_left li:hover a {
+  color: rgb(235, 169, 28);
+}
+.main .main_left li:hover img {
+  display: block;
+}
+.main .main_left ul li a {
   display: block;
   height: 58px;
   line-height: 58px;
   font-size: 18px;
-  background-color: rgb(241,245,248);
+  background-color: rgb(241, 245, 248);
   border-bottom: 1px solid white;
 }
-.main .botton{
+
+.main .middle {
+  display: flex;
+}
+.main .main_right {
+  margin-top: 58px;
+  width: 890px;
+  /* text-align: center; */
+}
+.main .main_right p:nth-of-type(1) span {
+  margin: 50px;
+  color: rgb(106, 106, 106);
+  line-height: 62px;
+}
+.main .main_right p:nth-of-type(1) {
+  border-bottom: 1px solid rgb(106, 106, 106);
+}
+.main .main_right p {
+  line-height: 25px;
+}
+.main .main_right h1 {
+  text-align: center;
+}
+.main .main_right div:nth-of-type(2) {
+  margin: 20px 0;
+}
+.main .main_right div:nth-of-type(2) a:nth-of-type(1) {
+  color: rgb(13, 111, 184);
+  font-size: 18px;
+}
+.main .main_right div:nth-of-type(2) a:nth-of-type(2) {
+  font-size: 18px;
+}
+.main .last {
+  background: url(./img/bottom_05.jpg);
+  height: 248px;
+}
+
+.main .last > div {
+  width: 1200px;
+  margin: 0 auto;
+  /* display: flex; */
+}
+.main .last > div > div {
+  float: left;
+}
+.main .last > div > div ul {
+  /* margin: 16px 0 0 36px; */
+  margin:14px 72px 0 0;
+  line-height: 32px;
+}
+.main .last > div > div ul li:nth-of-type(1) > a {
+  font-size: 16px;
+  color: black;
+}
+.main .last > div > div ul li a {
+  color: rgb(106, 106, 106);
+}
+.main .last img{
+  margin-top: 32px;
+  width: 150px;
+}
+
+.main .botton {
   width: 156px;
   height: 600px;
   position: fixed;
   right: 20px;
-  top:360px;
+  top: 360px;
   text-align: center;
   /* background-color: red; */
   /* border: 1px solid black; */
   /* z-index: 1; */
 }
-.main .botton li:nth-of-type(1) a{
+.main .botton li:nth-of-type(1) a {
   position: relative;
   display: block;
   width: 156px;
@@ -132,12 +215,12 @@ body {
   padding-left: 10px;
   border-radius: 28px;
   margin: 10px;
-  background-color: rgb(243,152,1);
+  background-color: rgb(243, 152, 1);
   color: white;
   font-size: 16px;
 }
 
-.main .botton li:nth-of-type(2) a:nth-of-type(2){
+.main .botton li:nth-of-type(2) a:nth-of-type(2) {
   position: relative;
   display: block;
   width: 156px;
@@ -147,26 +230,26 @@ body {
   padding-left: 10px;
   border-radius: 28px;
   margin: 10px;
-  background-color: rgb(13,111,184);
+  background-color: rgb(13, 111, 184);
   color: white;
   font-size: 16px;
 }
-.main .botton li:nth-of-type(2) a:nth-of-type(1){
+.main .botton li:nth-of-type(2) a:nth-of-type(1) {
   display: none;
   width: 190px;
   height: 56px;
   line-height: 56px;
-    background-color: rgb(13,111,184);
+  background-color: rgb(13, 111, 184);
   position: absolute;
-  left:-156px;
+  left: -156px;
   font-size: 16px;
   color: white;
 }
-.main .botton li:nth-of-type(2):hover a:nth-of-type(1){
+.main .botton li:nth-of-type(2):hover a:nth-of-type(1) {
   display: block;
 }
 
-.main .botton li:nth-of-type(3) a{
+.main .botton li:nth-of-type(3) a {
   position: relative;
   display: block;
   width: 156px;
@@ -176,21 +259,20 @@ body {
   padding-left: 10px;
   border-radius: 28px;
   margin: 10px;
-  background-color: rgb(245,111,38);
+  background-color: rgb(245, 111, 38);
   color: white;
   font-size: 16px;
 }
 
-
-.main .botton li:nth-of-type(3) img{
+.main .botton li:nth-of-type(3) img {
   position: absolute;
   width: 150px;
   left: -156px;
   padding: 20px;
-  background-color: rgb(245,111,38);
+  background-color: rgb(245, 111, 38);
   z-index: 1;
   display: none;
 }
-.main .botton li:nth-of-type(3):hover img{
+.main .botton li:nth-of-type(3):hover img {
   display: block;
 }

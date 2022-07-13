@@ -32,15 +32,15 @@ body {
 }
 
 
-.main .top .logo{
+.fl{
     float: left;
 }
 
-.main .top .tel{
+.fr{
     float: right;
 }
 .main .top .nav{
-    /* width: 852px; */
+    width: 852px;
     /* margin-left: 104px; */
     /* display: inline-block; */
     /* width: 500px; */
@@ -64,5 +64,70 @@ body {
 
 
 .main .banner{
-    background: ;
+    height: 268px;
+    background: url(./imgs/HONGZHUANG_banner_02.jpg) no-repeat center;
+}
+.main .detail{
+    width: 1121px;
+    margin: 0 auto;
+    position: relative;
+}
+.main .detail_left{
+    position: absolute;
+    top:-84px;
+}
+.main .detail_right{
+    width: 863px;
+}
+.main .detail_right div:nth-of-type(1){
+    border-bottom: 1px solid rgb(204,204,204);
+}
+.main .detail_right div:nth-of-type(1 ) span:nth-of-type(1){
+    font-size: 36px;
+}
+.main .detail_right > div span:nth-of-type(2){
+    margin-top: 24px;
+    color: rgb(153,153,153)
+}
+.main .detail_right span:nth-of-type(2) a{
+     color: rgb(153,153,153)
+}
+
+/* .main .detail_right > div:nth-of-type(2){
+    height: 450px;
+    border-bottom: 1px solid rgb(204,204,204);
+    display: flex;
+} */
+.main .detail_right div:nth-of-type(2) img{
+    margin-top: 56px;
+    border: 1px solid rgb(153,153,153);
+}
+.main .detail .detail_right .info .fr{
+    width:550px ;
+    margin: 20px;
+    line-height: 32px;
+}
+.main .detail .detail_right .info .fr p:nth-of-type(1) span:nth-of-type(1){
+    font-size: 32px;
+}
+.main .detail .detail_right .info .fr p:nth-of-type(1){
+    margin-top: 60px;
+}
+.main .detail .detail_right .fr .b1{
+    background: url(./imgs/HONGZHUANG_p3.png) no-repeat 5px center;
+    margin-left: 100px;
+}
+.main .detail .detail_right .fr .b2{
+    background: url(./imgs/HONGZHUANG_p4.png) no-repeat 5px center;
+}
+.main .detail .detail_right .fr .button{
+    font-size: 18px;
+    line-height: 48px;
+    display: inline-block;
+    color: rgb(237,33,36);
+    background-color: rgb(247,247,247);
+    height: 48px;
+    padding: 0 18px 0 36px;
+    position: relative;
+    margin-top: 20px;
 }

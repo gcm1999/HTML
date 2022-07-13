@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+img {
+  vertical-align: top;
+}
+body {
+  font-size: 14px;
+  font-family: "微软雅黑";
+}
+
+.main .top{
+    max-width: 1920px;
+    margin: 0 auto;
+    height: 102px;
+    background-color: rgb(25,25,25);
+}
+.main .top >div{
+    width: 1121px;
+    margin: 0 auto  ;
+}
+
+
+.main .top .logo{
+    float: left;
+}
+
+.main .top .tel{
+    float: right;
+}
+.main .top .nav{
+    /* width: 852px; */
+    /* margin-left: 104px; */
+    /* display: inline-block; */
+    /* width: 500px; */
+    /* margin:0 167px 0 102px; */
+}
+.main .top .nav ul{
+    
+    display: flex;
+    /* justify-content: space-between; */
+}
+.main .top .nav ul a{
+    text-align: center;
+    display: block;
+    color: rgb(204,204,204);
+    line-height: 102px;
+    width: 85px;
+}
+.main .top .nav ul li:hover a{
+    background-color: rgb(38,38,38);
+}
+
+
+.main .banner{
+    background: ;
+}

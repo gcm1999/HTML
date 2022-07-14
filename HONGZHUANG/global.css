@@ -20,6 +20,14 @@ body {
   font-family: "微软雅黑";
 }
 
+
+.fl{
+    float: left;
+}
+
+.fr{
+    float: right;
+}
 .main .top{
     max-width: 1920px;
     margin: 0 auto;
@@ -31,14 +39,6 @@ body {
     margin: 0 auto  ;
 }
 
-
-.fl{
-    float: left;
-}
-
-.fr{
-    float: right;
-}
 .main .top .nav{
     width: 852px;
     /* margin-left: 104px; */
@@ -139,11 +139,88 @@ body {
     margin-top: 20px;
 }
 
-.main .detail .detail_left .eg{
-    /* float: left; */
-    /* margin-top: 36px; */
+
+.main .detail .detail_right .eg h1{
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(204,204,204);
 }
-.main .detail .detail_left .eg h1{
-    margin-bottom: 20px;
-    border: 1px solid black;
+.main .detail .detail_right .eg ul{
+    width: 800px;
+    height: 300px;
+    display: flex;
+}
+.main .detail .detail_right .eg ul img{
+    width: 150px;
+    margin: 15px;
+    
+}
+.main .detail .detail_right .eg ul li{
+    position: relative;
+}
+.main .detail .detail_right .eg ul li::after{
+    content: attr(tips);
+    width: 150px;
+    height: 36px;
+    color: white;
+    text-align: center;
+    line-height: 36px;
+    font-size: 16px;
+    background-color: black;
+    position: absolute;
+    opacity: 0.6;
+    left: 15px;
+    top:150px
+}
+
+
+.main .bot{
+    max-width: 1920px;
+    margin: 0 auto;
+    height: 200px;
+    background-color: rgb(25,25,25);
+}
+.main .bot >div{
+    width: 1121px;
+    margin: 0 auto  ;
+    
+}
+
+.main .bot .nav{
+    width: 852px;
+    /* margin-left: 104px; */
+    /* display: inline-block; */
+    /* width: 500px; */
+    /* margin:0 167px 0 102px; */
+}
+.main .bot .nav ul{
+    
+    display: flex;
+    /* justify-content: space-between; */
+}
+.main .bot .nav ul a{
+    text-align: center;
+    display: block;
+    color: rgb(204,204,204);
+    line-height: 102px;
+    width: 76px;
+}
+.main .bot .nav ul li:hover a{
+    background-color: rgb(38,38,38);
+}
+.main .bot img{
+    margin: 20px 0;
+    width: 150px;
+}
+.main .bot .nav span{
+    border-left: 1px solid rgb(51,51,51);
+    line-height: 102px;
+}
+.main .bot .info{
+    color: rgb(139,139,139);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.main .bot .info span{
+    padding: 5px 0;
 }

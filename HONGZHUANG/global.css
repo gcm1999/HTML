@@ -102,6 +102,13 @@ body {
     margin-top: 56px;
     border: 1px solid rgb(153,153,153);
 }
+/* .fr::after{
+    content: '';
+    clear: both;
+} */
+.main .detail .detail_right .info{
+    float: left;
+}
 .main .detail .detail_right .info .fr{
     width:550px ;
     margin: 20px;
@@ -130,4 +137,13 @@ body {
     padding: 0 18px 0 36px;
     position: relative;
     margin-top: 20px;
+}
+
+.main .detail .detail_left .eg{
+    /* float: left; */
+    /* margin-top: 36px; */
+}
+.main .detail .detail_left .eg h1{
+    margin-bottom: 20px;
+    border: 1px solid black;
 }

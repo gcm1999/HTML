@@ -1,0 +1,223 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+img {
+  vertical-align: top;
+}
+body {
+  font-size: 14px;
+  font-family: "微软雅黑";
+  background-color: rgb(243, 242, 242);
+}
+
+.main {
+  width: 1000px;
+  margin: auto;
+}
+.main .top {
+  height: 161px;
+  background-color: white;
+}
+.main .top > div:nth-of-type(1) {
+  height: 101px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 960px;
+  margin: auto;
+}
+.main .top > div:nth-of-type(1) span {
+  width: 192px;
+  text-align: right;
+  margin-bottom: 20px;
+  font-size: 13px;
+  height: 32px;
+  line-height: 32px;
+  background: url(./imgs/tel.png) no-repeat left;
+}
+.main .top > div:nth-of-type(1) input {
+  width: 263px;
+  height: 29px;
+  margin-bottom: 20px;
+  background: url(./imgs/search.png) no-repeat right;
+  background-size: 29px;
+  border: 1px solid rgb(221, 221, 221);
+  font-size: 12px;
+}
+.main .top > div:nth-of-type(2) {
+  width: 960px;
+  margin: auto;
+}
+.main .top > div:nth-of-type(2) ul {
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid red;
+  line-height: 58px;
+  text-align: center;
+}
+.main .top > div:nth-of-type(2) ul li {
+  flex-grow: 1;
+  display: flex;
+}
+.main .top > div:nth-of-type(2) ul li a {
+  flex-grow: 1;
+}
+.main .top > div:nth-of-type(2) ul li a:hover {
+  color: red;
+}
+
+.main .spanner {
+  margin-top: 17px;
+  height: 430px;
+  background: url(./imgs/NCYINCHAO_spanner_03.jpg) no-repeat center;
+}
+.main .box1 {
+  border: 1px solid rgb(221, 221, 221);
+  margin-top: 17px;
+  display: flex;
+  height: 308px;
+  background-color: white;
+}
+.main .box1 .left {
+  width: 660px;
+  border-right: 1px solid rgb(221, 221, 221);
+}
+
+.main .box1 .left div {
+  margin: 14px 14px;
+}
+.main .box1 .left ul {
+  display: flex;
+  justify-content: space-around;
+}
+.main .box1 .left ul li {
+  font-size: 12px;
+  text-align: center;
+}
+.box1 .right div:nth-of-type(1) {
+  margin-left: 20px;
+  line-height: 36px;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+.box1 .right div:nth-of-type(1) a {
+  font-size: 12px;
+  color: rgb(185, 144, 102);
+}
+.box1 .right ul {
+}
+.box1 .right ul li {
+  margin-left: 24px;
+  line-height: 36px;
+
+  width: 276px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  list-style: disc;
+  overflow: hidden;
+
+  /* 加上 list-style-position: inside; 即可
+list-style-position 含义是属性设置在何处放置列表项标记。
+list-style-position 值 为一下内容
+list-style-position:inside  列表项目标记放置在文本以内，并且环绕文本根据标签对齐
+list-style-posit:outside  默认值 保持标记位于文本的左侧。列表项目标记放置在文本以外，且环绕文本不根据标记对齐。
+list-style-posit:inherit  规定应该从父元素继承 list-style-position 属性的值。
+版权声明：本文为CSDN博主「憨憨95程序员」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/vvvvvv333333333/article/details/116293536 */
+  list-style-position: inside;
+}
+
+.main .box2 {
+  border: 1px solid rgb(221, 221, 221);
+  margin-top: 17px;
+  height: 190px;
+  background-color: white;
+}
+.main .box2 ul {
+  display: flex;
+  height: 190px;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  font-size: 12px;
+  line-height: 32px;
+}
+
+.main .box3 {
+  border: 1px solid rgb(221, 221, 221);
+  margin-top: 17px;
+  height: 250px;
+  background-color: white;
+}
+
+.main .box3 .title {
+  line-height: 72px;
+  padding-left: 18px;
+  border-bottom: 1px solid rgb(221, 221, 221);
+}
+.main .box3 > .info > ul {
+  display: flex;
+  justify-content: space-between;
+}
+.main .box3 .info > ul > li {
+  line-height: 24px;
+  display: flex;
+  flex-grow: 1;
+}
+
+.main .box3 .info > ul > li:nth-of-type(2) {
+  border-left: 1px solid rgb(221, 221, 221);
+  border-right: 1px solid rgb(221, 221, 221);
+}
+.main .box3 .info > ul > li div {
+  margin-top: 24px;
+}
+.main .box3 ul li img {
+  margin: 28px 18px;
+}
+.main .box3 .info > ul > li ul > li {
+  margin-left: 18px;
+  font-size: 12px;
+  color: rgb(171, 171, 171);
+  list-style: disc;
+}
+
+.main .bottom {
+  height: 141px;
+}
+.main .bottom .up ul {
+  margin-top: 36px;
+  display: flex;
+  justify-content: space-around;
+  line-height: 36px;
+  font-size: 12px;
+  color: rgb(103, 103, 103);
+  border-bottom: 2px solid rgb(230, 3, 19);
+}
+.main .bottom ul a {
+  color: rgb(103, 103, 103);
+}
+.main .bottom .down ul {
+  height: 69px;
+  display: flex;
+  justify-content: start;
+  line-height: 36px;
+  font-size: 12px;
+  color: rgb(103, 103, 103);
+  background: url(./imgs/NCYINCHAO_logo2_03.jpg) no-repeat right;
+}
+.main .bottom .down ul li {
+  margin: 0 20px;
+}

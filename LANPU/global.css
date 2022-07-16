@@ -1,0 +1,189 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+img {
+  vertical-align: top;
+}
+body {
+  font-size: 14px;
+  font-family: "微软雅黑";
+  background-color: rgb(214, 235, 255);
+}
+
+.main {
+  max-width: 1920px;
+}
+.main .top {
+  height: 139px;
+  background: linear-gradient(rgb(254, 254, 254), rgb(233, 233, 233));
+  border-top: 23px solid rgba(21, 49, 98);
+}
+
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+
+/* .main .top > div::after{
+    content: '';
+    display: block;
+    clear: both;
+} */
+.clearbox {
+  clear: both;
+}
+
+.main .top > div {
+  width: 1080px;
+  margin: auto;
+}
+.main .top li {
+  height: 139px;
+  line-height: 139px;
+  text-align: center;
+  width: 85px;
+  float: left;
+}
+.main .top li a {
+  width: 85px;
+  height: 139px;
+  display: block;
+}
+.main .top li:hover a {
+  color: rgb(40, 73, 134);
+}
+
+.main .spanner {
+  height: 402px;
+
+  text-align: center;
+
+  /* 顺序不能乱 */
+  background: url(./imgs/LANPU.spanner_03.jpg) no-repeat center;
+  background-color: rgb(46, 91, 169);
+}
+
+.mod1,
+.mod2,
+.mod3 {
+  width: 1016px;
+  margin: auto;
+  border-bottom: 1px solid #ccc;
+}
+.mod1 {
+  height: 300px;
+}
+.mod2 {
+  height: 476px;
+}
+.main .info > div {
+  width: 1080px;
+  margin: auto;
+  background-color: white;
+}
+
+.main .info .mod1 > div:nth-of-type(1) {
+  margin-right: 36px;
+  width: 371px;
+  font-size: 12px;
+  text-indent: 2em;
+  letter-spacing: 1px;
+  line-height: 18px;
+  color: rgb(103, 103, 103);
+}
+
+.main .info .mod2 > div:nth-of-type(1) {
+  width: 738px;
+}
+
+.main .info .mod2 > div:nth-of-type(1) li {
+  font-size: 12px;
+  text-align: center;
+  width: 215px;
+  margin: 10px 0 0 24px;
+}
+.main .info .mod2 > div:nth-of-type(1) li span {
+  color: rgb(153, 153, 153);
+}
+
+.main .info .mod3 > div:nth-of-type(1) {
+  margin-bottom: 24px;
+  text-align: center;
+  width: 738px;
+}
+
+.main .mod3 .fr ul {
+  font-size: 12px;
+  line-height: 18px;
+  color: rgb(103, 103, 103);
+}
+
+.main .bottom {
+  height: 35px;
+  background-color: rgb(40, 73, 134);
+  text-align: center;
+  line-height: 35px;
+  color: rgb(169, 176, 193);
+}
+
+.news_link ul {
+  border: 1px solid black;
+}
+.news_link ul li {
+  line-height: 28px;
+  list-style: disc;
+  width: 236px;
+  /* margin-left: 52px; */
+  margin-left: 12px;
+  list-style-position: inside;
+}
+.news_link ul li a {
+  font-size: 12px;
+  color: rgb(103, 103, 103);
+}
+
+.main .bottom span {
+  margin-right: 24px;
+}
+
+.title {
+  height: 50px;
+  line-height: 50px;
+  padding-left: 20px;
+  position: relative;
+}
+.title::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 20px;
+  background: rgb(52, 85, 130);
+  position: absolute;
+  left: 5px;
+  top: 16px;
+}
+.title > a {
+  float: right;
+  text-decoration: none;
+  background-color: rgb(52, 85, 130);
+  color: #fff;
+  padding: 2px 5px;
+  line-height: 16px;
+  margin-top: 16px;
+}
+.title > h3 {
+  float: left;
+}

@@ -1,0 +1,280 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+img {
+  vertical-align: top;
+}
+body {
+  font-size: 14px;
+  font-family: "微软雅黑";
+  background-color: rgb(214, 235, 255);
+}
+
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+
+.top {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.top .logo {
+  height: 117px;
+  background: linear-gradient(white, rgb(245, 245, 245));
+}
+.top .logo > div {
+  width: 1000px;
+  margin: auto;
+}
+.top .logo .fr a {
+  margin: 12px;
+  font-size: 12px;
+  color: rgb(1, 119, 189);
+}
+.top .logo .fr {
+  margin-top: 36px;
+}
+.top .logo .fr p {
+  font-size: 18px;
+  background: linear-gradient(180deg, rgb(251, 213, 160), rgb(255, 144, 89));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.top .logo .fr span {
+  display: inline-block;
+  height: 12px;
+  border-left: 1px solid rgb(1, 119, 189);
+}
+
+.top .nav {
+  height: 43px;
+  background: linear-gradient(rgb(30, 136, 225), rgb(11, 81, 154));
+  border-bottom: 1px solid white;
+}
+
+.top .nav ul {
+  width: 1000px;
+  margin: auto;
+  line-height: 43px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.top .nav ul li {
+  position: relative;
+  flex-grow: 1;
+  display: flex;
+}
+.top .nav ul li a:hover {
+  color: rgb(18, 108, 191);
+  background: url(./imgs/p1.png) center no-repeat;
+  background-size: 120px 36px;
+}
+.top .nav ul li a {
+  font-weight: bold;
+  color: white;
+  flex-grow: 1;
+}
+
+.banner {
+  max-width: 1440px;
+  height: 385px;
+  margin: auto;
+  background: url(./imgs/NCTIANQING_banner_05.jpg) center no-repeat;
+}
+
+.banner div {
+  height: 49px;
+  background: linear-gradient(white, rgb(242, 242, 242));
+}
+.banner div ul {
+  width: 100px;
+  height: 49px;
+  margin: auto;
+  display: flex;
+}
+.banner div ul li {
+  margin: 2px;
+  width: 10px;
+  height: 10px;
+  border: 1px #ccc solid;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+}
+.banner div ul li:hover {
+  background-color: rgb(152, 194, 42);
+}
+
+.main {
+  max-width: 1440px;
+  height: 216px;
+  margin: auto;
+  background-color: white;
+}
+
+.main > div {
+  width: 1000px;
+  display: flex;
+  margin: auto;
+}
+.main .box1 {
+  height: 216px;
+  width: 364px;
+}
+.main .box2 {
+  width: 358px;
+  height: 216px;
+  border-left: 1px solid rgb(229, 229, 229);
+  border-right: 1px solid rgb(229, 229, 229);
+}
+.main .box2 ul{
+  line-height: 26px;
+  margin-left: 20px;
+}
+
+.main .box3{
+  width: 270px;
+}
+.main .box3 button:nth-of-type(1){
+  /* background:linear-gradient(white,rgb(218,218,218));
+  background: url(./imgs/s1.png) left no-repeat ; */
+  background: url(./imgs/s1.png) no-repeat left / contain, linear-gradient(white, rgb(218,218,218));
+
+}
+.main .box3 button:nth-of-type(2){
+  background: url(./imgs/s2.png) no-repeat left / contain, linear-gradient(white, rgb(218,218,218));
+
+}
+.main .box3 button:nth-of-type(3){
+  background: url(./imgs/s3.png) no-repeat 5px / contain, linear-gradient(white, rgb(218,218,218));
+
+}
+.main .box3 button {
+  margin: 0 0 4px 24px;
+  cursor: pointer;
+  width: 220px;
+  height: 50px;
+  background-color: rgb(225,224,224);
+}
+
+.info {
+  max-width: 1440px;
+  height: 483px;
+  margin: auto;
+  background-color: rgb(246, 246, 246);
+}
+.info > div {
+  width: 1000px;
+  margin: auto;
+}
+.info ul {
+  display: flex;
+}
+.info ul li {
+  margin: 16px;
+}
+
+.bottom {
+  max-width: 1440px;
+  height: 238px;
+  margin: auto;
+  background-color: rgb(55, 55, 55);
+  
+}
+.bottom > div {
+  position: relative;
+  height: 238px;
+  width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  line-height: 24px;
+  color: rgb(99,99,99);
+}
+.bottom img {
+  width: 200px;
+  height: 200px;
+}
+.bottom .triangle1{
+  left: 0;
+  top: 0;
+  position: absolute;
+  border-top: 10px solid white;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+.bottom .triangle2{
+  left: 700px;
+  top: 0;
+  position: absolute;
+  border-top: 10px solid white;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+
+.title {
+  height: 50px;
+  line-height: 50px;
+  padding-left: 20px;
+  position: relative;
+}
+.title > a::after {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid rgb(103, 194, 236);
+  background: rgb(159, 217, 246);
+  position: absolute;
+  left: 2px;
+  top: 4px;
+}
+.title > a {
+  float: right;
+  border-radius: 10px;
+  text-decoration: none;
+  background-color: rgb(239, 239, 239);
+  padding: 2px 2px;
+  padding-left: 20px;
+  line-height: 18px;
+  margin: 12px 12px 0 0;
+  font-size: 12px;
+  position: relative;
+}
+.title > h3 {
+  float: left;
+}
+.title > span {
+  margin-left: 12px;
+  color: rgb(163, 163, 163);
+}
+.spe {
+  color: white;
+  background-color: rgb(73, 174, 234);
+}
+.spe span{
+  color: white;
+}
+
+.ter,
+.stu{
+  text-align: center;
+}

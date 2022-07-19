@@ -1,0 +1,373 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+img {
+  vertical-align: top;
+}
+body {
+  font-size: 14px;
+  font-family: "微软雅黑";
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+.clearFloat {
+  clear: both;
+}
+
+.top {
+  height: 106px;
+  max-width: 1920px;
+  margin: auto;
+  border-bottom: 3px solid rgb(13, 111, 184);
+}
+.top > div {
+  width: 1200px;
+  margin: auto;
+}
+.top .logo {
+  margin-top: 16px;
+}
+.top .logo span:nth-of-type(1) {
+  font-size: 32px;
+  color: rgb(13, 111, 184);
+  font-weight: bold;
+}
+.top .logo span:nth-of-type(2) {
+  font-size: 16px;
+  color: rgb(13, 111, 184);
+}
+.top .search input {
+  outline: none;
+  height: 36px;
+  width: 325px;
+  border: 1px solid rgb(255, 181, 103);
+  color: rgb(136, 136, 136);
+}
+
+.top .search {
+  display: flex;
+  height: 106px;
+  line-height: 106px;
+  align-items: center;
+}
+.top .search button {
+  height: 38px;
+  display: block;
+  background-color: rgb(255, 181, 103);
+  width: 82px;
+  border: 1px solid rgb(255, 181, 103);
+  cursor: pointer;
+  color: white;
+}
+.top .tel {
+  font-size: 20px;
+  color: rgb(13, 111, 184);
+  height: 106px;
+  line-height: 106px;
+  padding-left: 36px;
+  margin-left: 20px;
+  background: url(./imgs/tel_03.jpg) left no-repeat;
+}
+
+.nav {
+  max-width: 1920px;
+  height: 53px;
+  margin: auto;
+  background-color: rgb(243, 152, 0);
+}
+.nav > div {
+  width: 1200px;
+  margin: auto;
+}
+.nav > div > ul {
+  display: flex;
+  justify-content: space-between;
+  line-height: 53px;
+  text-align: center;
+  font-size: 18px;
+}
+.nav > div > ul > li {
+  flex-grow: 1;
+  display: flex;
+  position: relative;
+}
+
+.nav > div > ul > li a {
+  color: white;
+  flex-grow: 1;
+}
+.nav > div > ul > li a:hover {
+  background-color: rgb(13, 111, 184);
+}
+.nav > div > ul > li ul {
+  display: none;
+  position: absolute;
+  background-color: rgb(13, 111, 184);
+  width: 100%;
+  font-size: 14px;
+  top: 53px;
+}
+.nav > div > ul > li:hover ul {
+  display: block;
+}
+.nav > div > ul > li ul li {
+  border-top: 1px solid rgb(7, 89, 150);
+  display: flex;
+}
+.nav > div > ul > li ul li a {
+  flex-grow: 1;
+}
+.nav > div > ul > li ul li a:hover {
+  background-color: rgb(243, 152, 0);
+}
+
+.banner {
+  height: 700px;
+  max-width: 1920px;
+  margin: auto;
+  background: url(./imgs/智谷首页_02.jpg);
+}
+
+.main > div:nth-of-type(2n) {
+  max-width: 1920px;
+  margin: auto;
+  padding: 50px 0;
+  text-align: center;
+  background: url(./imgs/main_16.jpg);
+}
+.main > div:nth-of-type(2n + 1) {
+  max-width: 1920px;
+  margin: 50px auto;
+  text-align: center;
+}
+.main > div > div {
+  width: 1200px;
+  margin: auto;
+}
+
+.main > div p {
+  color: rgb(102, 102, 102);
+  margin-bottom: 36px;
+}
+.main > .box1 > div {
+  display: flex;
+  justify-content: space-between;
+}
+.main > .box1 > div p {
+  font-size: 18px;
+  color: black;
+  margin-top: 12px;
+}
+.main > .box1 img {
+  padding: 16px;
+  background-color: rgb(248, 248, 248);
+  border: 1px solid rgb(204, 204, 204);
+}
+.main .box2 > div {
+  display: flex;
+
+  line-height: 32px;
+  text-align: left;
+  justify-content: space-between;
+}
+.main .box2 > div img {
+  border-left: 32px solid rgb(243, 152, 0);
+  border-top: 32px solid rgb(243, 152, 0);
+  margin-left: 36px;
+}
+.main .box2 > div a {
+  color: rgb(243, 152, 0);
+}
+
+.main .box3 > div {
+  display: flex;
+  justify-content: space-between;
+}
+.main .box3 > div > div {
+  margin-top: 50px;
+  width: 240px;
+  height: 297px;
+  background-color: rgb(244, 243, 243);
+  position: relative;
+}
+.main .box3 > div > div img {
+  position: absolute;
+  border-radius: 50%;
+  left: 50px;
+  top: -70px;
+}
+.main .box3 > div > div h3 {
+  font-size: 18px;
+  color: rgb(243, 152, 1);
+}
+.main .box3 > div > div > div {
+  padding: 12px 0;
+  margin: 0 24px;
+}
+.main .box3 > div > div > div:nth-of-type(1) {
+  margin-top: 80px;
+  border-bottom: 1px solid rgb(102, 102, 102);
+}
+
+.main .box4 > div {
+  display: flex;
+  justify-content: space-between;
+}
+.main .box4 > div > div > p {
+  margin-top: 12px;
+  color: black;
+}
+
+.main .box5 > div {
+  display: flex;
+}
+.main .box5 > div {
+  text-align: left;
+}
+.main .box5 > div > div {
+  width: 600px;
+}
+.main .box5 > div > div ul li {
+  font-size: 16px;
+  border-bottom: 1px dashed rgb(204, 204, 204);
+  line-height: 54px;
+}
+.main .box5 > div > div ul li span:nth-of-type(1) {
+  color: rgb(243, 152, 0);
+}
+.main .box5 > div > div ul li span:nth-of-type(2) {
+  font-size: 12px;
+  color: rgb(102, 102, 102);
+}
+
+.bottom {
+  height: 234px;
+  max-width: 1920px;
+  margin: auto;
+  background-color: rgb(55, 54, 54);
+  font-size: 12px;
+}
+.bottom > div {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+}
+.bottom > div > div {
+  line-height: 30px;
+  margin-top: 36px;
+
+  color: rgb(155,155,155);
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+.bottom > div > div ul a{
+  color: rgb(155,155,155);
+}
+.bottom > div > div ul{
+  flex-grow: 1;
+  
+}
+.bottom > div > div img{
+  width: 150px;
+}
+
+.botton {
+  width: 156px;
+  height: 600px;
+  position: fixed;
+  right: 20px;
+  top: 360px;
+  text-align: center;
+  /* background-color: red; */
+  /* border: 1px solid black; */
+  /* z-index: 1; */
+}
+.botton li:nth-of-type(1) a {
+  position: relative;
+  display: block;
+  width: 156px;
+  height: 56px;
+  line-height: 56px;
+  background: url(./imgs/zixun.png) no-repeat 15px;
+  padding-left: 10px;
+  border-radius: 28px;
+  margin: 10px;
+  background-color: rgb(243, 152, 1);
+  color: white;
+  font-size: 16px;
+}
+
+.botton li:nth-of-type(2) a:nth-of-type(2) {
+  position: relative;
+  display: block;
+  width: 156px;
+  height: 56px;
+  line-height: 56px;
+  background: url(./imgs/tel\ copy.png) no-repeat 15px;
+  padding-left: 10px;
+  border-radius: 28px;
+  margin: 10px;
+  background-color: rgb(13, 111, 184);
+  color: white;
+  font-size: 16px;
+}
+.botton li:nth-of-type(2) a:nth-of-type(1) {
+  display: none;
+  width: 190px;
+  height: 56px;
+  line-height: 56px;
+  background-color: rgb(13, 111, 184);
+  position: absolute;
+  left: -156px;
+  font-size: 16px;
+  color: white;
+}
+.botton li:nth-of-type(2):hover a:nth-of-type(1) {
+  display: block;
+}
+
+.botton li:nth-of-type(3) a {
+  position: relative;
+  display: block;
+  width: 156px;
+  height: 56px;
+  line-height: 56px;
+  background: url(./imgs/saoma.png) no-repeat 15px;
+  padding-left: 10px;
+  border-radius: 28px;
+  margin: 10px;
+  background-color: rgb(245, 111, 38);
+  color: white;
+  font-size: 16px;
+}
+
+.botton li:nth-of-type(3) img {
+  position: absolute;
+  width: 150px;
+  left: -156px;
+  padding: 20px;
+  background-color: rgb(245, 111, 38);
+  z-index: 1;
+  display: none;
+}
+.botton li:nth-of-type(3):hover img {
+  display: block;
+}
